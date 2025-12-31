@@ -9,11 +9,10 @@ app.use(cors());
 app.use(cors({ origin: "*" }));
 
 app.get("/", (req, res) => {
-  res.json;
-  {
-    message: "Server is running";
-    apikey: apikey;
-  }
+  res.json({
+    message: "Server is running",
+    apikey: apikey,
+  });
 });
 
 const PORT = process.env.PORT || 30000;
